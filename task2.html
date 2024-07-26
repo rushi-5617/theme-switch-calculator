@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task2.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div id="calculator">
+                <div class="parent">
+                    <input type="text" id="output" placeholder="0" readonly>
+                </div>
+
+                <button class="button row-1" onclick="clr()">AC</button>
+                <button class="button row-1" onclick="del()">DEL</button>
+                <button class="button row-1" onclick="calc('%')">%</button>
+                <button class="button col-4" onclick="calc('÷')">÷</button>
+                <button class="button other" onclick="calc(7)">7</button>
+                <button class="button other" onclick="calc(8)">8</button>
+                <button class="button other" onclick="calc(9)">9</button>
+                <button class="button col-4" onclick="calc('×')">×</button>
+                <button class="button other" onclick="calc(4)">4</button>
+                <button class="button other" onclick="calc(5)">5</button>
+                <button class="button other" onclick="calc(6)">6</button>
+                <button class="button col-4" onclick="calc('−')">−</button>
+                <button class="button other" onclick="calc(1)">1</button>
+                <button class="button other" onclick="calc(2)">2</button>
+                <button class="button other" onclick="calc(3)">3</button>
+                <button class="button col-4" onclick="calc('+')">+</button>
+                <button class="button other zero" onclick="calc(0)">0</button>
+                <button class="button other" onclick="calc('.')">.</button>
+                <button class="button col-4" onclick="ans()">=</button>
+            </div>
+
+            <div class="buttons">
+                <button class="greet" onclick="time()">Time</button>
+                <button class="color" onclick="theme()">Color</button>
+            </div>
+        </div>
+
+        <script src="task2.js"></script>
+
+    </main>
+</body>
+</html>
